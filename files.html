@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portal do Tocantins</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style9.css" />
+    <script src="https://kit.fontawesome.com/1363d66b1e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>document.documentElement.className = 'js';</script>
+</head>
+<body class="portal">
+    
+    
+    <header>
+        <nav class="outter-nav">
+            <div class="row ">				
+                <div class="container">
+                    <div class="col s12">
+                        <div class="outter-nav">
+                            <a href="index.html" class="brand-logo ">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+                                    <defs>
+                                        <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 214 150">
+                                            <image width="214" height="150" xlink:href="data:image/png;base64,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"/>
+                                        </pattern>
+                                    </defs>
+                                    <g id="Grupo_447" data-name="Grupo 447" transform="translate(-74)">
+                                        <g id="Grupo_445" data-name="Grupo 445" transform="translate(-8)">
+                                            <rect id="Retângulo_177" data-name="Retângulo 177" width="70" height="38" transform="translate(82)" fill="#0a4b83"/>
+                                        </g>
+                                        <g id="Imagem_1" data-name="Imagem 1" transform="translate(97 7)" stroke="#fff" stroke-width="1" fill="url(#pattern)">
+                                            <rect width="35.667" height="25" rx="5" stroke="none"/>
+                                            <rect x="0.5" y="0.5" width="34.667" height="24" rx="4.5" fill="none"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                                
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="130" height="35" viewBox="0 0 130 35">
+                                    <text id="tocantins" transform="translate(1 28)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" font-size="25" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="-0.072em"><tspan x="0" y="0">TOCANTINS</tspan></text>
+                                </svg>										  
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down outter-nav">
+                                    <li><a href="governo.html">Serviços</a></li>
+                                    <li><a href="http://transparencia.to.gov.br">Portal da Transparência</a></li>
+                                    <li><a href="acessoinfo.html">Acesso à informação</a></li>
+                                    
+                                    <li><a href="#" class="m-trigger">Órgãos do governo <i class="material-icons right" style="padding-top: 6px;">
+                                            arrow_drop_down
+                                            </i></a> </li>
+                                </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay-o-menu" style="display: none;">
+            <div class="overlay-content  row">
+                <div class="col s12">
+                <div class="col s10 offset-s1">
+                    <div class="col s12 m4 offset-m4">
+                        <form>
+                                <input type="search" id="input-service" class="input-service" name="search"  autocomplete="off" placeholder="Filtrar órgãos do governo">
+                                <button class="button-service"><i class="material-icons  " style="
+                                    font-size: 40px;">search</i></button>
+                            </form>
+                        </div>
+                        <div class="close"><i class="material-icons right  padding-2 gray-text" style="
+                            font-size: 35px;">close</i></div>
+                    <div class=" col s12 sub-title ">  <h6  class=" white-text"> <div class="divider-left divider-sub"></div>secretarias</h6> </div>
+                <div class="col s12 m4 ">
+                    <h6 class="org">  <a href="#">Casa Civil  </a> </h6>
+                    <h6 class="org">  <a href="#"> Casa Militar </a> </h6> 
+                    <h6 class="org">  <a href="#">Controladoria-Geral do Estado</a> </h6>  
+                    <h6 class="org">  <a href="#"> Corpo de Bombeiros Militar </a> </h6> 
+                    <h6 class="org">  <a href="#"> Polícia Militar </a> </h6>  
+                    <h6 class="org">  <a href="#"> Procuradoria-Geral do Estado </a> </h6>  
+                    <h6 class="org">  <a href="#"> Secretaria da Indústria, Comércio e Serviços </a> </h6>  
+                </div>
+                <div class="col s12 m4 ">
+                        <h6 class="org"><a href="#"> Secretaria da Administração</a></h6>
+                        <h6 class="org"><a href="#">Secretaria da Agricultura, Pecuária e Aquicultura</a></h6>
+                        <h6 class="org"><a href="#">Secretaria da Cidadania e Justiça</a></h6>
+                        <h6 class="org"><a href="#">Corpo de Bombeiros Militar</a></h6>
+                        <h6 class="org"> <a href="#">	Secretaria da Comunicação</a></h6>
+                        <h6 class="org"><a href="#">	Secretaria da Educação, Juventude e Esporte</a></h6>
+                        <h6 class="org"><a href="#">	Secretaria da Fazenda e Planejamento</a></h6>
+                    
+                    </div>
+                <div class="col s12 m4 ">
+                        
+                        <h6 class="org"><a href="#">Secretaria da Infraestrutura, Cidades e Habitação</a></h6>
+                        <h6 class="org"><a href="#">Secretaria da Saúde</a></h6>
+                        <h6 class="org"><a href="#">	Secretaria da Segurança Pública</a></h6>
+                        <h6 class="org"><a href="#">Secretaria do Meio Ambiente e Recursos Hídricos</a></h6>
+                        <h6 class="org"><a href="#">Secretaria do Trabalho e Desenvolvimento Social</a></h6>
+                    </div>
+                    
+            </div>
+            <div class="col s10 offset-s1">
+                    <div class=" col s12  sub-title ">  <h6  class=" white-text"> <div class="divider-left divider-sub"></div>secretarias</h6> </div>
+                    <div class="col s12 m4 ">
+						<h6 class="org">  <a href="#">Casa Civil  </a> </h6>
+						<h6 class="org">  <a href="#"> Casa Militar </a> </h6> 
+						<h6 class="org">  <a href="#">Controladoria-Geral do Estado</a> </h6>  
+						<h6 class="org">  <a href="#"> Corpo de Bombeiros Militar </a> </h6> 
+						<h6 class="org">  <a href="#"> Polícia Militar </a> </h6>  
+						<h6 class="org">  <a href="#"> Procuradoria-Geral do Estado </a> </h6>  
+						<h6 class="org">  <a href="#"> Secretaria da Indústria, Comércio e Serviços </a> </h6>  
+					</div>
+					<div class="col s12 m4 ">
+							<h6 class="org"><a href="#"> Secretaria da Administração</a></h6>
+							<h6 class="org"><a href="#">Secretaria da Agricultura, Pecuária e Aquicultura</a></h6>
+							<h6 class="org"><a href="#">Secretaria da Cidadania e Justiça</a></h6>
+							<h6 class="org"><a href="#">Corpo de Bombeiros Militar</a></h6>
+							<h6 class="org"> <a href="#">	Secretaria da Comunicação</a></h6>
+							<h6 class="org"><a href="#">	Secretaria da Educação, Juventude e Esporte</a></h6>
+							<h6 class="org"><a href="#">	Secretaria da Fazenda e Planejamento</a></h6>
+						
+						</div>
+					<div class="col s12 m4 ">
+							
+							<h6 class="org"><a href="#">Secretaria da Infraestrutura, Cidades e Habitação</a></h6>
+							<h6 class="org"><a href="#">Secretaria da Saúde</a></h6>
+							<h6 class="org"><a href="#">	Secretaria da Segurança Pública</a></h6>
+							<h6 class="org"><a href="#">Secretaria do Meio Ambiente e Recursos Hídricos</a></h6>
+							<h6 class="org"><a href="#">Secretaria do Trabalho e Desenvolvimento Social</a></h6>
+						</div>
+                    
+            </div>
+            <div class="col s10 offset-s1">
+                    <div class=" col s12  sub-title ">  <h6  class=" white-text"> <div class="divider-left divider-sub"></div>secretarias</h6> </div>
+                    <div class="col s12 m4 ">
+						<h6 class="org">  <a href="#">Casa Civil  </a> </h6>
+						<h6 class="org">  <a href="#"> Casa Militar </a> </h6> 
+						<h6 class="org">  <a href="#">Controladoria-Geral do Estado</a> </h6>  
+						<h6 class="org">  <a href="#"> Corpo de Bombeiros Militar </a> </h6> 
+						<h6 class="org">  <a href="#"> Polícia Militar </a> </h6>  
+						<h6 class="org">  <a href="#"> Procuradoria-Geral do Estado </a> </h6>  
+						<h6 class="org">  <a href="#"> Secretaria da Indústria, Comércio e Serviços </a> </h6>  
+					</div>
+					<div class="col s12 m4 ">
+							<h6 class="org"><a href="#"> Secretaria da Administração</a></h6>
+							<h6 class="org"><a href="#">Secretaria da Agricultura, Pecuária e Aquicultura</a></h6>
+							<h6 class="org"><a href="#">Secretaria da Cidadania e Justiça</a></h6>
+							<h6 class="org"><a href="#">Corpo de Bombeiros Militar</a></h6>
+							<h6 class="org"> <a href="#">	Secretaria da Comunicação</a></h6>
+							<h6 class="org"><a href="#">	Secretaria da Educação, Juventude e Esporte</a></h6>
+							<h6 class="org"><a href="#">	Secretaria da Fazenda e Planejamento</a></h6>
+						
+						</div>
+					<div class="col s12 m4 ">
+							
+							<h6 class="org"><a href="#">Secretaria da Infraestrutura, Cidades e Habitação</a></h6>
+							<h6 class="org"><a href="#">Secretaria da Saúde</a></h6>
+							<h6 class="org"><a href="#">	Secretaria da Segurança Pública</a></h6>
+							<h6 class="org"><a href="#">Secretaria do Meio Ambiente e Recursos Hídricos</a></h6>
+							<h6 class="org"><a href="#">Secretaria do Trabalho e Desenvolvimento Social</a></h6>
+						</div>
+
+                    
+                    
+            </div>
+            </div>
+        </div>
+         </div>
+
+        </nav>
+        <nav>
+            <div class="row inner-nav">
+                    <div class="container ">
+                            <div class="col s12 inner-nav "> 
+                                <div class="hide-on-small-onlya ">
+                                    <a href="#" data-target="mobile-demo" class="menu-trigger left up"><i class="material-icons">menu</i></a>
+                                    <div class="divid-menu left"></div>
+                                </div> 
+                                 <a href="noticia.html" class=" pad-l tittle">Agência de Tecnologia da Informação</a>
+                            <!-- <a href="noticia.html" class=" pad-l tittle-m show-on-small-only hide-on-med-and-up">Agência de Tecnologia da Informação</a> -->
+                        </div>
+
+                    </div>
+                </div>
+    </div>
+        </nav>
+        <!--  menu  start -->
+		<div class="overlay-menu " style="display: none;">
+            <div class="container">
+            <div class="overlay-content  row">		
+                <div class="arrow-up hide-on-small-only"></div>
+                <div class="">
+
+<!--  menu m start -->
+<div class="hide-on-med-and-up">
+<button class="collapse  "> <a href="noticia.html">Home </a></button>
+<button class="collapse  "> <a href="galery.html">Galeria</a></button>
+<button class="collapse  "> <a href="files.html">Arquivos e Links</a></button>
+
+
+                <button class="collapse ">Aquisição de bens e serviços de TIC  <i class="material-icons right icon-d">
+                        keyboard_arrow_down
+                        </i> 
+                        <i class="material-icons right icon-u">
+                                keyboard_arrow_up
+                                </i>
+                    </button>
+<div class="contentmenu">
+    <ul class="column ">
+            <li><a href="http://transparencia.to.gov.br" class="son-1">Legislação</a></li>
+            
+                    <button class=" push son-1 collapse active ">Documentos diversos <i class="material-icons right ">
+                            keyboard_arrow_down
+                            </i> 
+                        
+                        </button>
+            <li><a href="#">Filho nível 3o</a></li>
+            <li><a href="#">Filho nível 3o</a></li>
+            <li><a href="#">Filho nível 3o</a></li>
+            <li><a href="#" class="son-1 hl-menu">Ata de registro de preços
+                <i class="material-icons right centerr">
+                keyboard_arrow_down
+                </i></a></li>
+        </div>
+        </ul>
+
+
+<button class="collapse ">Sistemas Governamentais 		
+</button>
+<button class="collapse ">DNS - Dominio to.gov.br 		
+</button>
+</div>
+</div>
+<!--  menu m end -->
+                            <!--  menu  start-->   
+                    <ul class="column  col m4 s12 hide-on-small-only ">
+                            <li><a href="noticia.html">Home </a></li>
+                            <li><a href="galery.html">Galeria</a></li>
+                            <li><a href="files.html">Arquivos e Links</a></li>
+                            <li><a href="noticia.html">Aquisição de bens e serviços de TIC
+                                    <i class="material-icons right centerr hide-on-small-only">
+                                    keyboard_arrow_right
+                                    </i>
+                                    <i class="material-icons right centerr hide-on-med-and-up">
+                                            keyboard_arrow_down
+                                            </i>
+                                </a></li>
+                                    <li><a href="noticia.html">Sistemas Governamentais <i class="material-icons right centerr hide-on-small-only">
+                                            keyboard_arrow_right
+                                            </i>
+                                            <i class="material-icons right centerr hide-on-med-and-up">
+                                                    keyboard_arrow_down
+                                                    </i>
+                                        </a></li>
+                                <li><a href="galery.html">Galeria</a></li>
+                            <li><a href="files.html">Arquivos e Links</a></li>
+                        </ul>	
+
+                
+        <div class="col s12 m8 c1 hide-on-small-only">
+        <div class="col s12  ">  <h6 class="sub-t" id="sub-black">Tudo em Aquisição de bens e serviços de TIC </h6>
+        <div class="divider-menu "></div>	
+        </div>
+                     <ul class="column col s12 m6 ">
+                    <li><a href="http://transparencia.to.gov.br" class="son-1">Legislação</a></li>
+                    <li><a href="acessoinfo.html" class="son-1">Documentos diversos <i class="material-icons right centerr" >
+                            keyboard_arrow_down
+                            </i></a></li>
+                    <li><a href="#">Filho nível 3o</a></li>
+                    <li><a href="#">Filho nível 3o</a></li>
+                    <li><a href="#">Filho nível 3o</a></li>
+                </ul>
+                <ul class="column col s12 m6  ">
+                    <li><a href="#" class="son-1">Ata de registro de preços
+                            <i class="material-icons right centerr">
+                            keyboard_arrow_down
+                            </i></a></li>
+                    <li><a href="#">Filho nível 3o</a></li>
+                    <li><a href="#">Filho nível 3o</a></li>
+                    <li><a href="#">Filho nível 3o</a></li>
+                    <li><a href="#" class="son-1">O governo </a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <!--  menu  end-->
+        </div>
+    </header>
+    <div class="main-wrap" >							
+        
+        <div class="search-wrap">
+            <div id="btn-search" class=" btn--search white-text"><i class="material-icons ">
+                search
+            </i></div>
+        </div>
+    </div>
+    
+    <!-- descomentar se erro  </div>-->
+    
+    <div class="search">
+            <div id="btn-search-close" class=" btn--search-close" aria-label="Close search form"><i class="material-icons " >close</i></div>
+            <div class="search__inner search__inner--up">
+                
+                <form class="search__form" action="">
+                        <h1 style="text-align: center; color:rgb(0, 0, 0); font-size: 50px !important; font-weight: 600;">Buscar</h1>
+                        <input type="search" id="input-service" class="input-service" name="search"  autocomplete="off" placeholder="Filtrar órgãos do governo" style="margin-top: 40px !important;
+                        border: 2px solid #FCAA00 !important; height: 60px !important;">
+                        <button class="button-s"><i class="material-icons  " style="
+                            font-size: 35px;">search</i></button>
+                </form>
+            </div>
+            <div class="search__inner search__inner--down">
+                <div class="search__related">
+                    <div class="search__suggestion">
+                        <h3>Sugestões?</h3>
+                        <p>#inovação #conhecimento #catgif #broken #governador #portal #transparencia #governo #palacio #tecnologia #tech #talk #agencia </p>
+                    </div>
+                    <div class="search__suggestion">
+                        <h3>Mais Pesquisadas</h3>
+                        <p>#inovação #conhecimento #catgif #broken #governador #portal #transparencia #governo #palacio #tecnologia #tech #talk #agencia </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+       
+         
+      
+    <div class="container">
+            <nav id="gretel">
+                    <div class="row gretel-bar">
+                    <div class="col s12 white gretel-bar ">
+                        <a href="noticia.html" class="breadcrumb blue-text">Início</a>
+                        <a href="#!"  class="breadcrumb grey-text " style="cursor: default">Página com Arquivos PDF e Links</a>
+                        <div class="divider"></div>
+                      </div>
+                    </div>
+                </nav>
+        <div class="section">
+            <div class="row">
+                <div class="col s12 galeria">
+                    <div class="head-title " style="margin-left:100px;" >
+                    <p style="font-size: 30px; "> Página com Arquivos PDF e Links</p>
+                    <span class="right "> <i class="fab fa-facebook-square sm-icon" ></i>
+                        <i class="fab fa-instagram sm-icon"  ></i><i class="fab fa-twitter sm-icon"  ></i> </span>
+                    <div> Publicado em 10/10/2018. Atualizado em 09/09/2019
+                     </div> 
+                    <div class="divider" ></div>
+                    </div>
+                        <div class="col s8 offset-s2">
+                    <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nobis eligendi nemo incidunt, tempora odit ex consequuntur
+                         accusamus cumque veniam in asperiores, doloremque optio aliquid culpa. Obcaecati molestias eos dolore. <br>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laborum nulla cum pariatur! Recusandae pariatur ut nobis sit illum, repellendus cum quisquam dolor 
+                         accusantium aliquam, aliquid, inventore placeat delectus voluptates.
+                         </div>
+
+                        <div class="col s12    links-cont">
+                            <div class="links-title col s12 ">
+                                    <i class="material-icons " style="margin-right: 15px;">
+                                            attachment</i> Link
+                            </div>
+                            <div class="row">
+                                <div class="inner-links col  m5 s12">  <i class="material-icons " style="margin-right: 15px;">
+                                        attachment</i> Link  documento importante
+                                    </div>
+                                    <div class="inner-links col  m5 s12">  <i class="material-icons " style="margin-right: 15px;">
+                                            attachment</i> Link  documento importante
+                                    </div>
+                                    <div class="inner-links col  m5 s12">  <i class="material-icons " style="margin-right: 15px;">
+                                            attachment</i> Link  documento importante
+                                    </div>
+                                    <div class="inner-links col  m5 s12">  <i class="material-icons " style="margin-right: 15px;">
+                                            attachment</i> Link  documento importante
+                                    </div>
+                                    <div class="inner-links col  m5 s12">  <i class="material-icons " style="margin-right: 15px;">
+                                            attachment</i> Link  documento importante
+                                    </div>
+                                    <div class="inner-links col  m5 s12">  <i class="material-icons " style="margin-right: 15px;">
+                                            attachment</i> Link  documento importante
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col s12   links-cont">
+                                <div class="links-title col s12 ">
+                                        <i class="material-icons " style="margin-right: 15px;">
+                                                folder_open</i> Arquivos
+                                </div>
+                                <div class="row">
+                                    <div class="inner-files col  m5 s12">  <i class="material-icons  amber-text" style="margin-right: 15px; font-size: 30px !important; ">
+                                            folder_open</i> Algum arquivo muito importante tambem.pdf
+                                        </div>
+                                        <div class="inner-files col  m5 s12">  <i class="material-icons  amber-text" style="margin-right: 15px; font-size: 30px !important; ">
+                                                folder_open</i> Algum arquivo muito importante tambem.pdf
+                                        </div>
+                                        <div class="inner-files col  m5 s12">  <i class="material-icons  amber-text" style="margin-right: 15px; font-size: 30px !important; ">
+                                                folder_open</i> Algum arquivo muito importante tambem.pdf
+                                        </div>
+                                        <div class="inner-files col  m5 s12">  <i class="material-icons  amber-text" style="margin-right: 15px; font-size: 30px !important; ">
+                                                folder_open</i> Algum arquivo muito importante tambem.pdf
+                                        </div>
+                                        <div class="inner-files col  m5 s12">  <i class="material-icons  amber-text" style="margin-right: 15px; font-size: 30px !important; ">
+                                                folder_open</i> Algum arquivo muito importante tambem.pdf
+                                        </div>
+                                        <div class="inner-files col  m5 s12">  <i class="material-icons  amber-text" style="margin-right: 15px; font-size: 30px !important; ">
+                                                folder_open</i> Algum arquivo muito importante tambem.pdf
+                                        </div>
+                                            
+                            </div>
+                        </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    
+    
+    <footer class="commonfooter">
+        <div class="logo_footer">
+            <div class="content">
+                <img src="img/brasao.png" alt="Governo do Tocantins">
+                <address>Praça dos Girassóis, s/n <br/>Palmas - Tocantins</address>
+            </div>
+        </div>
+        <div class="links_footer">
+            <ul>
+                <li><a href="#"><i class="material-icons">phone_in_talk</i>Ouvidoria</a></li>
+                <li><a href="#"><i class="material-icons">contact_support</i>Serviço de informação ao cidadão</a></li>
+                <li><a href="#"><i class="material-icons">search</i>portal da transpArência</a></li>
+                <li><a href="#"><i class="material-icons">sms_failed</i>Acesso À informação</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/demo9.js"></script>
+    <script>
+	
+	$(document).ready(function(){
+		$(".icon-u").hide();
+		$(".collapse").click(function(){
+		$(".icon-u", this).toggle();
+		$(".icon-d", this).toggle();
+		  });
+
+ 	 $('.menu-trigger').click(function(){
+    $('.overlay-menu').slideToggle();
+	  });
+	
+	  $('.m-trigger').on('click', function(){
+			$('.overlay-o-menu').slideDown();
+		});
+		$('.close i').on('click', function(){
+			$('.overlay-o-menu').slideUp();
+		});
+
+		
+	});
+	
+	var coll = document.getElementsByClassName("collapse");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var contentmenu = this.nextElementSibling;
+    if (contentmenu.style.maxHeight){
+      contentmenu.style.maxHeight = null;
+    } else {
+      contentmenu.style.maxHeight = contentmenu.scrollHeight + "px";
+    } 
+  });
+}
+	
+</script>
+        
+</body>
+</html

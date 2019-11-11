@@ -1,0 +1,60 @@
+{:uriI"†file://app/assets/vendors/ionRangeSlider/index.html?type=text/html&id=8bd4cd3453a0d2e7b7bdedf2ddd7782265d21030d6215f18f62d14383081503c:ET:load_pathI"app/assets/vendors;T:filenameI"1app/assets/vendors/ionRangeSlider/index.html;T:	nameI"ionRangeSlider/index;T:logical_pathI"ionRangeSlider/index.html;T:content_typeI"text/html;T:sourceI"<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Ion.RangeSlider - test</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+</head>
+<body>
+
+
+<!-- Page contents -->
+<div style="position: relative; padding: 200px;">
+
+    <div>
+        <input type="text" id="price-range" value="" name="price-range" />
+    </div>
+
+</div>
+
+
+
+
+<!-- All JS -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
+
+<script>
+
+    $(function () {
+
+        $("#range").ionRangeSlider({
+            hide_min_max: true,
+            keyboard: true,
+            min: 0,
+            max: 5000,
+            from: 1000,
+            to: 4000,
+            type: 'double',
+            step: 1,
+            prefix: "$",
+            grid: true
+        });
+
+    });
+</script>
+
+
+
+
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"?file-digest://app/assets/vendors/ionRangeSlider/index.html;TTF:charsetI"
+utf-8;F:digest"%ûeJn7ú/[—t§Ä‚ƒHú²ÏI‚åµ~'÷­:lengthi:dependencies_digest"%^°ðaÚQ¡ÓîËô§—7kOºJ’½œ+yƒcaGÈ¢º:idI"E8bd4cd3453a0d2e7b7bdedf2ddd7782265d21030d6215f18f62d14383081503c;F:
+mtimel+*ºí\

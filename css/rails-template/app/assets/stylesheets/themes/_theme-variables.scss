@@ -1,0 +1,67 @@
+// ==========================================================================
+// Materialize theme variables
+// ==========================================================================
+//
+// Table of Contents:
+//
+//  1. Colors
+//  2. Sidenav
+
+//Colors
+$azulgov: #2e5790;
+$verdegov: #259551;
+$amarelogov: #f6c62d;
+
+$primary-color: $azulgov;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: lighten($primary-color, 30%) !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
+
+$white: #fff !default;
+$black: #000 !default;
+$body-bg: #fff !important;
+$title-font-color: #333 !default;
+$body-font-color: #333 !default;
+$breadcrumbs-bg: #f8f8f8 !default;
+
+
+// Theme main color
+$link-color: $primary-color;
+$sidenav-dark-bg: $primary-color !important;
+$button-floating-background: $primary-color;
+$sidenav-active-bg: darken($primary-color, 10%);
+$radio-fill-color: $primary-color;
+
+//Sidenav
+$sidenav-hover-bg: rgba(255,255,255, 0.06);
+$sidenav-open-bg: rgba(255,255,255, 0.1);
+$sidenav-active-text-color: $white;
+$sidenav-img-bg: url('/images/brasao.png');
+$sidenav-collapsed-width: 64px !default;
+$sidenav-hover-bg: rgba(0, 0, 0, 0.2) !default;
+$sidenav-open-bg: rgba(0, 0, 0, 0.2) !default;
+$sidenav-active-text-color: $title-font-color !default;
+$sidenav-active-bg: rgba(0, 0, 0, 0.09) !default;
+$sidenav-active-box-shadow: none !default;
+$right-sidenav-width: 340px !default; // Right SideNav
+
+
+// Typography
+//=======================
+// $h1-fontsize: 3rem !default;
+// $h2-fontsize: 2.5rem !default;
+// $h3-fontsize: 2.1rem !default;
+// $h4-fontsize: 1.7rem !default;
+// $h5-fontsize: 1.5rem !default;
+$h6-fontsize: 1.2rem !default;
+
+// .row {
+// 	margin-bottom: 0;
+//   .col {    
+//     padding: 0 $gutter-width / 1.5;
+//     }
+// }

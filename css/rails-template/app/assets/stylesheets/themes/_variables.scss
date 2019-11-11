@@ -1,0 +1,40 @@
+// ==========================================================================
+// Materialize variables
+// Extended from : components/variables.scss
+// ==========================================================================
+
+// 1. Colors
+// ==========================================================================
+// Color
+
+@import "theme-variables";
+@import "../components/color-variables";
+@import "../components/color-classes";
+
+// 3. Buttons
+// ==========================================================================
+$button-font-size: 1rem;
+$button-padding: 0 2rem;
+$button-radius: 4px;
+
+// Large buttons
+$button-large-font-size: 1rem;
+$button-floating-large-size: 4rem;
+
+// Small buttons
+$button-small-font-size: 1rem;
+
+// 4. Cards
+// ==========================================================================
+$card-link-color: color("indigo", "darken-1");
+
+// 10. Forms
+// ==========================================================================
+
+// Text Inputs + Textarea
+$input-font-size: 1rem;
+$input-margin-bottom: 20px;
+
+// 14. Side Navigation
+// ==========================================================================
+$sidenav-width: 250px;

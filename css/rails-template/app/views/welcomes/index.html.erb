@@ -1,0 +1,481 @@
+<% title "Página de padronização" %>
+
+<% content_for :page_actions do %>
+<a class="btn azul-to dropdown-settings waves-effect waves-light breadcrumbs-btn right" href="#!" data-target="dropdown1">
+  Ações
+  <i class="material-icons right">arrow_drop_down</i>
+</a>
+<ul class="dropdown-content" id="dropdown1" tabindex="0" style="">
+  <li tabindex="0"><a class="grey-text text-darken-2" href="user-profile-page.html">Profile<span class="new badge red">2</span></a></li>
+  <li tabindex="0"><a class="grey-text text-darken-2" href="app-contacts.html">Contacts</a></li>
+  <li tabindex="0"><a class="grey-text text-darken-2" href="page-faq.html">FAQ</a></li>
+</ul>
+
+<% end %>
+
+
+<div class="section">
+  <div class="card">
+    <div class="card-content">
+      <p class="caption mb-0">
+        Nesta página você encontra os elementos padronizados para o desenvolvimento de aplicações na parte administrativa (interna).
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- INSTALACAO -->
+<div id="instalacao" class="section">
+  <h5>Instalação</h5>
+  <div class="row">
+    <div class="col s12">
+      <div class="card-panel">
+        <h6>Gem</h6>
+        <p>A gem criado para padronizar os projetos tanto definem o layout como funcionam para o scaffolding. Para obter o materialize com o template padronizado adicione o seguinte código ao <em>Gemfile</em> do seu projeto:</p>
+        <div class="card-panel black lighten-4 white-text z-depth-0 mt-0">
+          <code>
+            gem 'ati_style', git: 'http://git.seplan.to.gov.br/jakson.moura/ati_style.git'
+          </code>
+        </div>
+<div class="divider mb-3"></div>
+<h6>Configuração inicial</h6>
+        <p>Após a instalação da gem. É preciso executar o comando de instalação do template:</p>
+        <div class="card-panel black lighten-4 white-text z-depth-0 mt-0">
+          <code lang="erb">
+            rails g ati_style:install
+          </code>
+        </div>
+        <div class="card-panel yellow lighten-4">
+          O template usa o <em>root_path</em>, por isso  defina-o no <em>routes.rb</em>.
+        </div>
+
+<p>Com isso você já está pronto para começar.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIM INSTALACAO -->
+
+<!-- TITULO BREADCRUMB -->
+<div id="titulo-breadcrumb" class="section">
+  <h5>Breadcrumb</h5>
+  <h6>A seção do breadcrumb encorpora o títlo da página, o breadcrumb em si e os botões de <a href="#botoes">ação no contexto da página</a>.</h6>
+  <div class="row">
+    <div class="col s12">
+      <div class="card-panel">
+        <h6>Título da página</h6>
+        <p>Para definir o título basta usar o helper <u>title()</u> na respectiva na view.</p>
+        <div class="card-panel black lighten-4 white-text z-depth-0 mt-0">
+          <code>
+            &lt;% title "Título da página"  %&gt;
+          </code>
+        </div>
+<div class="divider mb-3"></div>
+<h6 id="botoes_acaocontexto">Botões da página</h6>
+        <p>Para incluír um botão no breadcrumb basta inclua, na view, o seguinte trecho:</p>
+        <div class="card-panel black lighten-4 white-text z-depth-0 mt-0">
+          <code lang="erb">
+            &lt;% content_for :page_actions do %&gt;
+            <div style="padding-left: 20px;">&lt;a class="btn"&gt;&lt;i class="material-icons right"&gt;edit&lt;/i&gt;Editar item&lt;/a&gt;</div>
+            &lt;% end %&gt;
+          </code>
+        </div>
+<a href="#botoes">(Ver mais sobre botões)</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- FIM TITULO BREADCRUMB -->
+<!-- CORES -->
+<div id="cores" class="section">
+  <h5>Cores</h5>
+
+  <div class="row">
+    <div class="col s6">
+      <div class="card-panel">
+        <p>As cores principais a serem usadas são as cores do estado de acordo com a nomenclatura ao lado. Entretanto, em locais específicos outras corem podem ser usadas como o <span class="red white-text pl-1 pr-1">VERMELHO</span> por exemplo, para ações importantes.</p>
+
+        <h6>Cores Flat</h6>
+        <p>Cores de background para qualquer tipo de objeto terão o design flat, sem gradiente, mas com a possibilidade de borda e/ou sombra, bem como as opções de usar as classes <strong>"lighten"</strong> e <strong>"darken"</strong>.</p>
+
+      </div>
+    </div>
+
+    <div class="col s6 center-align"><div class="card-panel azul-to"><h6 class="white-text">Azul (class "azul-to")</h6></div></div>
+    <div class="col s6 center-align"><div class="card-panel verde-to"><h6 class="white-text">Verde (class "verde-to")</h6></div></div>
+    <div class="col s6 center-align"><div class="card-panel  amarelo-to"><h6 class="white-text">Amarelo (class "amarelo-to")</h6></div></div>
+
+  </div>
+
+</div>
+<!-- FIM CORES -->
+
+<div class="divider"></div>
+
+<!-- BOTOES -->
+<div id="botoes" class="section">
+  <h5>Botões</h5>
+  <div class="card">
+    <div class="card-content">
+      <div class="row">
+        <div class="row">
+          <div class="col s6 border-right">
+            <div class="row">
+              <div class="col s12">
+                <p>Os ícones nos botões serão, em geral, alinhados à esquerda. Nas ações secundárias abstenha-se do uso de ícones, demonstrando assim que aquela ação é menos importante, como no exemplo abaixo:</p>
+                <div class="pt-4"></div>
+                <p>
+                  <button class="btn waves-effect btn-secondary left">Cancelar</button>
+                  <button class="btn waves-effect waves-light verde-to right">
+                    <i class="material-icons left">dashboard</i> 
+                    Botão
+                  </button>
+
+                </p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col s12">
+                <h6 id="botoes_acaocontexto">Botão de contexto da página</h6>
+                <div class="row">
+                  <div class="col s9">  
+                    <p>
+                      Trata-se de um botão que traz ações relacionadas ao todo de uma página como uma ação para um grupo de itens, no caso de uma lista ou ações para um ítem específico, na view <em>show</em>, como a ação editar, por exemplo. <br>
+                      O botão de ação no contexto da página ficará, por padrão no <em>breadcrumb</em> (topo da página).<br>
+                      <a href="#botoes_acaocontexto">(Ver código)</a>
+                    </p>
+                  </div>
+                  <div class="col s3">
+                    <a class="btn azul-to dropdown-settings waves-effect waves-light breadcrumbs-btn" href="#!" data-target="dropdown2">
+                      Ações
+                      <i class="material-icons right">arrow_drop_down</i>
+                    </a><ul class="dropdown-content" id="dropdown2" tabindex="0" style="">
+                      <li tabindex="0"><a class="grey-text text-darken-2" href="user-profile-page.html">Ação 1<span class="new badge red">2</span></a></li>
+                      <li tabindex="0"><a class="grey-text text-darken-2" href="app-contacts.html">Ação 2</a></li>
+                      <li tabindex="0"><a class="grey-text text-darken-2" href="page-faq.html">Ação 3</a></li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s6">
+            <h6>Nomenclatura dos botões</h6>
+            <p>O botão deve ter sua descrição mais específica possível, buscando também o menor uso de palavras. De forma geral, opte pelo padrão: <strong>[Ação no infinitivo] + [objeto da ação]</strong>, como a seguir:</p>
+
+            <button class="btn waves-effect waves-light azul-to mt-3"><i class="material-icons left">send</i> Redistribuir folha</button>
+            <button class="btn waves-effect waves-light amarelo-to mt-3 black-text"><i class="material-icons left">attach_file</i> Anexar arquivo</button>
+            <button class="btn waves-effect waves-light red darken-4 mt-3"><i class="material-icons left">delete</i> Remover elemento</button>
+
+            <div class="card-panel grey lighten-4 z-depth-0 mt-3">
+              <p>Os botões de crud, por serem recorrentes, podem usar apenas uma palavra.</p>
+              <button class="btn waves-effect waves-light verde-to mt-3"><i class="material-icons left">save</i> Salvar</button>
+              <button class="btn waves-effect waves-light azul-to mt-3"><i class="material-icons left">edit</i> Editar</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIM BOTOES -->
+
+<div class="divider"></div>
+
+<!-- CARDS -->
+<div id="cards" class="section">
+  <h5>Cards</h5>
+  <div class="card">
+    <div class="card-content">
+      <p>Os cards devem ser usados para agrupar os tipos de conteúdos e/ou seções deixando as informações exibidas organizadas.</p>
+      <p>Apesar de existir a possibilidade de escrever fora dos cards. Dê preferência à coloca-los dentro, com exceção do título atribuído ao card.</p>
+      <p>O estilos dos cards disponíveis no <strong><%= link_to("Admin Template", cards_path) %></strong> podem ser usados conforme a necessidade.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4">
+      <div class="card-panel verde-to center-align">
+        <h5 class="white-text ">Os cards</h5>
+      </div>
+    </div>
+    <div class="col s4">
+      <div class="card-panel azul-to center-align">
+        <h5 class="white-text ">podem ter</h5>
+      </div>
+    </div>
+    <div class="col s4">
+      <div class="card-panel amarelo-to darken-1 center-align">
+        <h5 class="white-text">cores personalizadas.</h5>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- FIM CARDS -->
+
+<div class="divider"></div>
+
+<!-- FORMS -->
+<div id="forms" class="section">
+  <h5>Formulários</h5>
+
+  <div class="row">
+
+    <div class="col s12 m6 l6">
+
+      <div id="placeholder" class="card card card-default scrollspy">
+        <div class="card-content">
+          <h4 class="card-title">Form com placeholder</h4>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="João Cardoso" id="name2" type="text">
+                <label for="name2" class="active">Nome</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="joao@email.com" id="email2" type="email">
+                <label for="email" class="active">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <button class="btn verde-to waves-effect waves-light right" type="submit" name="action">Enviar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l6">
+      <div id="prefixes" class="card card card-default scrollspy">
+        <div class="card-content">
+          <!-- <h4 class="card-title">Form with icon prefixes</h4> -->
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="name3" type="text">
+                <label for="name3">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email3" type="email">
+                <label for="email3">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <button class="btn verde-to waves-effect waves-light right" type="submit" name="action">Salvar
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s12">
+      <div id="validations" class="card card-tabs">
+        <div class="card-content">
+          <div class="card-title">
+            <div class="row">
+              <div class="col s12 m6 l10">
+                <h4 class="card-title">Jquery Validation Example</h4>
+              </div>
+            </div>
+          </div>
+          <div id="view-validations">
+            <form class="formValidate" id="formValidate" method="get">
+              <div class="row">
+                <div class="input-field col s12">
+                  <label for="uname">Username*</label>
+                  <input id="uname" name="uname" type="text" data-error=".errorTxt1">
+                  <div class="errorTxt1"></div>
+                </div>
+                <div class="input-field col s12">
+                  <label for="cemail">E-Mail *</label>
+                  <input id="cemail" type="email" name="cemail" data-error=".errorTxt2">
+                  <div class="errorTxt2"></div>
+                </div>
+                <div class="input-field col s12">
+                  <label for="password">Password *</label>
+                  <input id="password" type="password" name="password" data-error=".errorTxt3">
+                  <div class="errorTxt3"></div>
+                </div>
+                <div class="input-field col s12">
+                  <label for="cpassword">Confirm Password *</label>
+                  <input id="cpassword" type="password" name="cpassword" data-error=".errorTxt4">
+                  <div class="errorTxt4"></div>
+                </div>
+                <div class="input-field col s12">
+                  <label for="curl">URL *</label>
+                  <input id="curl" type="url" name="curl" data-error=".errorTxt5">
+                  <div class="errorTxt5"></div>
+                </div>
+                <div class="col s12">
+                  <label for="crole">Role *</label>
+                  <select class="" id="crole" name="crole" data-error=".errorTxt6">
+                    <option value="" disabled="" selected="">Choose your profile</option>
+                    <option value="1">Manager</option>
+                    <option value="2">Developer</option>
+                    <option value="3">Business</option>
+                  </select>
+                  <div class="input-field">
+                    <div class="errorTxt6"></div>
+                  </div>
+                </div>
+                <div class="input-field col s12">
+                  <textarea id="ccomment" name="ccomment" class="materialize-textarea validate" data-error=".errorTxt7"></textarea>
+                  <label for="ccomment">Your comment *</label>
+                  <div class="errorTxt7"></div>
+                </div>
+                <div class="col s12">
+                  <p>Gender </p>
+                  <p>
+                    <label>
+                      <input name="gender" type="radio" checked="">
+                      <span>Male</span>
+                    </label>
+                  </p>
+
+                  <label>
+                    <input name="gender" type="radio">
+                    <span>Female</span>
+                  </label>
+                  <div class="input-field">
+                    <div class="errorTxt8"></div>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <label for="tnc_select">T&amp;C *</label>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="tnc_select">
+                      <span>Please agree to our policies</span>
+                    </label>
+                  </p>
+                  <div class="input-field">
+                    <div class="errorTxt6"></div>
+                  </div>
+                </div>
+                <div class="input-field col s12">
+                  <button class="btn waves-effect waves-light right submit" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- FIM FORMS -->
+
+<div class="divider mt-1"></div>
+
+<!-- ABAS (TABS) -->
+<div id="tabs" class="section">
+  <h5>Abas (Tabs)</h5>
+  <div class="card">
+    <div class="card-content">
+      <p>De acordo com o livro Não me faça pensar de Steve Krug as Abas sugerem um espaço físico. Elas criam a ilusão de que a aba ativa (se bem feita) se move fisicamente para frente.</p>
+      <p>É um truque simples, porém eficaz, provavelmente porque se baseia em uma sugestão visual a qual somos bons em detectar ("coisas na frente de outras"). De alguma forma o resultado é uma sensação mais forte que o comum de que o site está dividido em seções e que você está em uma delas.</p>
+      <p>Além disso as abas sempre se apresentam no mesmo lugar, diferentemente de um accordion onde o local do clique se move dinamicamente trazendo um trabalho extra para navegar entre as seções.
+      </p>
+      <div class="col s12 pb-2 pt-1">
+        <ul class="tabs">
+          <li class="tab col m3"><a href="#test1">Test 1</a>
+          </li>
+          <li class="tab col m3"><a href="#test2">Test 2</a>
+          </li>
+          <li class="tab col m3"><a href="#test3">Test 3</a>
+          </li>
+          <li class="tab col m3"><a href="#test4">Test 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FIM ABAS (TABS) -->
+
+  </div>
+
+
+  <% content_for :footer do %>
+  <script>
+    $(document).ready(function(){
+     $("#formValidate").validate({
+      rules: {
+        uname: {
+          required: true,
+          minlength: 5
+        },
+        cemail: {
+          required: true,
+          email:true
+        },
+        password: {
+          required: true,
+          minlength: 5
+        },
+        cpassword: {
+          required: true,
+          minlength: 5,
+          equalTo: "#password"
+        },
+        curl: {
+          required: true,
+          url:true
+        },
+        crole:"required",
+        ccomment: {
+          required: true,
+          minlength: 15
+        },
+        cgender:"required",
+        cagree:"required",
+      },
+      //For custom messages
+      messages: {
+        uname:{
+          required: "Enter a username",
+          minlength: "Enter at least 5 characters"
+        },
+        curl: "Enter your website",
+      },
+      success: function(element){
+        $(element).closest(".input-field").removeClass("error");
+      },
+      errorElement : 'div',
+      errorPlacement: function(error, element) {
+        var placement = $(element).data('error');
+        $(element).addClass("error");
+        if (placement) {
+          $(placement).append(error)
+        } else {
+          error.insertAfter(element);
+        }
+      }
+    });
+   });
+ </script>
+ <% end %>

@@ -1,0 +1,19 @@
+/* Error: $color: color("light-blue", "lighten-1") is not a color.
+ *   ,
+ * 9 | $primary-color-light: lighten($primary-color, 15%);
+ *   |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src/sass/themes/_variables.scss 9:23  @import
+ *   src/sass/themes/_theme.scss 3:9       @import
+ *   src/sass/theme.scss 1:9               root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: $color: color("light-blue", "lighten-1") is not a color.\a   \2577 \a 9 \2502  $primary-color-light: lighten($primary-color, 15%);\a   \2502                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/sass/themes/_variables.scss 9:23  @import\a   src/sass/themes/_theme.scss 3:9       @import\a   src/sass/theme.scss 1:9               root stylesheet';
+}
